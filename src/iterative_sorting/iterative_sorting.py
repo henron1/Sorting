@@ -20,15 +20,10 @@ def selection_sort( arr ):
 # TO-DO:  implement the Bubble Sort function below
 def bubble_sort( arr ):
     for i in range(0, len(arr) - 1):
-        for j in range(0, len(arr) -1 - i):
+        for j in range(0, len(arr) -1 - i): #-1 because last item in list is sorted
             if arr[j] > arr[j + 1]:
                 arr[j], arr[j + 1] = arr[j + 1], arr[j]
-    # swaps_occurered = True
-    # while swaps_occured:
-        
-    # for i in range(1, len(arr)):
     return arr
-
 
 # STRETCH: implement the Count Sort function below
 def count_sort( arr, maximum=-1 ):
